@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Przetwarzanie obrazów</title>
+<script src="https://cdn.jsdelivr.net/npm/tesseract.js@latest/dist/tesseract.min.js"></script>
+<script src="https://unpkg.com/browser-fs-access"></script>
+</head>
+<body>
+<h1>Przetwarzanie obrazów</h1>
+<input type="file" id="imageUpload" accept="image/*" multiple>
+<br>
+<button id="processButton">Przetwórz obrazy</button>
+<h2>Wyniki</h2>
+<div id="results"></div>
+<h2>Postęp</h2>
+ <progress id="progressBar" value="0" max="100"></progress>
+<span id="timeRemaining"></span>
+<input type="file" id="saveResultsButton" hidden>
+
+ <script src="script.js"></script>
+</body>
+</html>
